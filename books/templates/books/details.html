@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Lib</title>
+</head>
+<style>
+    .page{
+        background-color: black;
+        height: 100vh;
+        width: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+    .main{
+        height: 800px;
+        width: 800px;
+        margin:auto auto;
+
+        background-color: white;
+    }
+
+</style>
+
+<body class="page">
+    <div class="main">
+        <ul>
+            <li>{{book.title}}</li>
+            <li>{{book.author}}</li>
+            <li>{{book.description}}</li>
+            <li>{{book.category}}</li>
+        </ul>
+
+        <a class="btn btn-primary" href="/" role="button">Home</a>
+    </div>
+</body>
+</html>
