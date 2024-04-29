@@ -19,3 +19,11 @@ class Book(models.Model):
     
     def __str__(self):
         return self.title
+    
+
+class BookImage(models.Model):
+    name = models.CharField(max_length=100, null=True, blank=True)
+    image = models.ImageField(upload_to='books')
+    
+    def __str__(self):
+        return self.name

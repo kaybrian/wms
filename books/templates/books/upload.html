@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Lib</title>
+</head>
+<style>
+    .page{
+        background-color: black;
+        height: 100vh;
+        width: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+    .main{
+        height: 800px;
+        width: 800px;
+        margin:auto auto;
+
+        background-color: white;
+    }
+
+</style>
+
+<body class="page">
+    <div class="main">
+        <form method="POST" action="" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="text" name="name" id="title" placeholder="Enter the name">
+            <input type="file" name="image" id="file">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
